@@ -1,0 +1,80 @@
+.chatbar{
+    flex:0.7;
+    display:flex;
+    flex-direction:column;
+}
+.chatbar-header{
+    display:flex;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+.chatbar-header-info{
+    flex: 1;
+    padding-left: 20px;
+}
+.chatbar-header-info > h3{
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+.chatbar-header-info>p{
+    color:gray;
+}
+.chatbar-header-right{
+    display:flex;
+    justify-content: space-between;
+    min-width:100px;
+}
+
+.chatbar-body{
+    flex: 1;
+    padding: 30px;
+    overflow: scroll;
+}
+.chatbar-message{
+    position:relative;
+    font-size: 16px;
+    padding:10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width:fit-content;
+    margin-bottom: 30px;
+}
+.chatbar-reciever{
+    margin-left:auto;
+    background-color: #dcf8c6;
+}
+.chatbar-timestamp{
+    margin-left:10px;
+    font-size:xx-small;
+}
+.chatbar-message-name{
+    position:absolute;
+    font-weight: 800;
+    top:-18px;
+    font-size:small;
+}
+.chatbar-send{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height: 62px;
+    border-top: 1px solid lightgray;
+}
+.chatbar-send > form{
+    flex: 1;
+    display:flex;
+}
+.chatbar-send > form > input{
+    flex:1;
+    border-radius:30px;
+    padding:10px;
+    border:none;
+}
+.chatbar-send > form > button{
+    display:none;
+}
+.chatbar-send > .MuiSvgIcon-root{
+    padding: 20px;
+    color:gray;
+}
