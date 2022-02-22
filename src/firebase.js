@@ -1,5 +1,7 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-import firebase from 'firebase';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore'
 const firebaseConfig = {
     apiKey: "AIzaSyCwvLnzwFjsJHMpVKntVEJFK5L-Jd6zkK0",
     authDomain: "chat-app-aeb64.firebaseapp.com",
@@ -11,7 +13,8 @@ const firebaseConfig = {
   };
 
   const firebaseApp = firebase.initializeApp(firebaseConfig);
-  const db=firebaseApp.firestore();
+  const db = firebaseApp.firestore();
+  console.log(db);
   const auth = firebase.auth();
   const provider = new firebase.auth.GoogleAuthProvider();
 
